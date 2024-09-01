@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Task</title>
+  </head>
+  <style>
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin: 0;
+    }
+    header {
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 10px;
+      background-color: rgb(26, 209, 105);
+    }
+    header h2 {
+      color: #fff;
+    }
+
+    section {
+      padding-left: 10px;
+    }
+    nav {
+      margin: 15px 0px;
+    }
+    nav a {
+      color: rgb(24, 199, 24);
+      text-decoration: none;
+      padding-right: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    main {
+      margin: 10px 0px;
+      width: 700px;
+    }
+    main img {
+      width: 800px;
+    }
+    main p {
+      text-align: center;
+    }
+    #link {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    article h3 {
+      margin-bottom: 20px;
+      margin-top: 60px;
+    }
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 350px;
+      height: 150px;
+      text-align: center;
+    }
+    th {
+      border: 1px solid black;
+      height: 40px;
+    }
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <header><h2>My First Webpage</h2></header>
+    <section>
+      <nav>
+        <a href="#webpage-contents">Webpage Contents</a>
+        <a href="#information-table">Information Table</a>
+        <a href="#contact-form">Contact Form</a>
+      </nav>
+      <main>
+        <img src="image/spotify.png" alt="spotify-landing-page" />
+        <p>
+          This is a sample paragraph describing the content of the webpage. It
+          explains the purpose of the page and provide some basic information
+          about what users can expect to find
+        </p>
+        <div id="link">
+          <a href="https://www.techyjaunt.com" target="_blank"
+            >Visit TechJaunt</a
+          >
+        </div>
+      </main>
+      <article id="webpage-contents">
+        <h3>Webpage Contents</h3>
+        <ul>
+          <li>Introduction</li>
+          <li>Table of Information</li>
+          <li>Contact Form</li>
+        </ul>
+      </article>
+      <article id="information-table">
+        <h3>Information Table</h3>
+        <table>
+          <thead>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Quantity</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pens</td>
+              <td>Blue ink Pens</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Notebooks</td>
+              <td>Spiral-bound Notebooks</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Markers</td>
+              <td>Permanent Markers</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="contact-form">
+        <h3>Contact Form</h3>
+        <form>
+          <label for="name">Name: </label> <input type="text" id="name" />
+          <br />
+          <br />
+          <label for="email">Email: </label>
+          <input type="email" id="email" /><br /><br />
+          <label for="password">Password: </label>
+          <input type="password" id="password" /><br /><br />
+          <label for="gender">Gender: </label
+          ><input type="radio" name="gender" id="male" /> <span> Male </span>
+          <input type="radio" name="gender" id="female" />
+          <span> Female</span> <br /><br />
+          <label for="items">Number of Items: </label>
+          <input type="number" name="items" id="items" /> <br /><br />
+          <label for="date">Date: </label>
+          <input type="date" name="date" id="date" /> <br /><br />
+          <label for="message">Message: </label> <br />
+          <textarea name="message" id="message" cols="50" rows="8"></textarea>
+          <br /><br />
+          <button>Submit</button>
+          <br /><br />
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
